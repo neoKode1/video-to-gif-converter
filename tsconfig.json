@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",                                  // Specifies ECMAScript target version.
+    "lib": ["dom", "dom.iterable", "esnext"],         // Specify library files to include in the compilation.
+    "allowJs": true,                                  // Allow JavaScript files to be compiled.
+    "skipLibCheck": true,                             // Skip type checking of declaration files.
+    "strict": true,                                   // Enable all strict type-checking options.
+    "forceConsistentCasingInFileNames": true,         // Ensure consistent casing in imports.
+    "noEmit": true,                                   // Do not emit outputs.
+    "esModuleInterop": true,                          // Enables emit interoperability between CommonJS and ES modules.
+    "module": "esnext",                               // Sets the module system to ESNext.
+    "moduleResolution": "node",                       // Resolves module imports as Node.js would.
+    "resolveJsonModule": true,                        // Include modules that resolve JSON files.
+    "isolatedModules": true,                          // Ensures each file can be safely transpiled without dependencies.
+    "jsx": "preserve",                                // Preserve JSX for React.
+    "incremental": true,                              // Speed up builds by storing incremental build information.
+    "baseUrl": ".",                                   // Set the base URL for module resolution.
+    "paths": {
+      "@/components/*": ["components/*"],             // Aliasing for components folder.
+      "@/lib/*": ["lib/*"],                           // Aliasing for lib folder.
+      "@/styles/*": ["styles/*"]                      // Aliasing for styles folder.
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"], // Files to include.
+  "exclude": ["node_modules"]                         // Exclude node_modules folder from the project.
+}

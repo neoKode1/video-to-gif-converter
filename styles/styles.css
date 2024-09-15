@@ -1,0 +1,4 @@
+/* Ensure this file is processed by PostCSS with Tailwind CSS plugin */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
