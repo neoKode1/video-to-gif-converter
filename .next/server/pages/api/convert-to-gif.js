@@ -1,0 +1,96 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/api/convert-to-gif";
+exports.ids = ["pages/api/convert-to-gif"];
+exports.modules = {
+
+/***/ "fluent-ffmpeg":
+/*!********************************!*\
+  !*** external "fluent-ffmpeg" ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = require("fluent-ffmpeg");
+
+/***/ }),
+
+/***/ "multer":
+/*!*************************!*\
+  !*** external "multer" ***!
+  \*************************/
+/***/ ((module) => {
+
+module.exports = require("multer");
+
+/***/ }),
+
+/***/ "next/dist/compiled/next-server/pages-api.runtime.dev.js":
+/*!**************************************************************************!*\
+  !*** external "next/dist/compiled/next-server/pages-api.runtime.dev.js" ***!
+  \**************************************************************************/
+/***/ ((module) => {
+
+module.exports = require("next/dist/compiled/next-server/pages-api.runtime.dev.js");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "(api)/./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fconvert-to-gif&preferredRegion=&absolutePagePath=.%2Fpages%5Capi%5Cconvert-to-gif.ts&middlewareConfigBase64=e30%3D!":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fconvert-to-gif&preferredRegion=&absolutePagePath=.%2Fpages%5Capi%5Cconvert-to-gif.ts&middlewareConfigBase64=e30%3D! ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   routeModule: () => (/* binding */ routeModule)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/future/route-modules/pages-api/module.compiled */ \"(api)/./node_modules/next/dist/server/future/route-modules/pages-api/module.compiled.js\");\n/* harmony import */ var next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/server/future/route-kind */ \"(api)/./node_modules/next/dist/server/future/route-kind.js\");\n/* harmony import */ var next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dist/build/templates/helpers */ \"(api)/./node_modules/next/dist/build/templates/helpers.js\");\n/* harmony import */ var _pages_api_convert_to_gif_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages\\api\\convert-to-gif.ts */ \"(api)/./pages/api/convert-to-gif.ts\");\n\n\n\n// Import the userland code.\n\n// Re-export the handler (should be the default export).\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_pages_api_convert_to_gif_ts__WEBPACK_IMPORTED_MODULE_3__, \"default\"));\n// Re-export config.\nconst config = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_pages_api_convert_to_gif_ts__WEBPACK_IMPORTED_MODULE_3__, \"config\");\n// Create and export the route module that will be consumed.\nconst routeModule = new next_dist_server_future_route_modules_pages_api_module_compiled__WEBPACK_IMPORTED_MODULE_0__.PagesAPIRouteModule({\n    definition: {\n        kind: next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__.RouteKind.PAGES_API,\n        page: \"/api/convert-to-gif\",\n        pathname: \"/api/convert-to-gif\",\n        // The following aren't used in production.\n        bundlePath: \"\",\n        filename: \"\"\n    },\n    userland: _pages_api_convert_to_gif_ts__WEBPACK_IMPORTED_MODULE_3__\n});\n\n//# sourceMappingURL=pages-api.js.map//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LXJvdXRlLWxvYWRlci9pbmRleC5qcz9raW5kPVBBR0VTX0FQSSZwYWdlPSUyRmFwaSUyRmNvbnZlcnQtdG8tZ2lmJnByZWZlcnJlZFJlZ2lvbj0mYWJzb2x1dGVQYWdlUGF0aD0uJTJGcGFnZXMlNUNhcGklNUNjb252ZXJ0LXRvLWdpZi50cyZtaWRkbGV3YXJlQ29uZmlnQmFzZTY0PWUzMCUzRCEiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBc0c7QUFDdkM7QUFDTDtBQUMxRDtBQUM0RDtBQUM1RDtBQUNBLGlFQUFlLHdFQUFLLENBQUMseURBQVEsWUFBWSxFQUFDO0FBQzFDO0FBQ08sZUFBZSx3RUFBSyxDQUFDLHlEQUFRO0FBQ3BDO0FBQ08sd0JBQXdCLGdIQUFtQjtBQUNsRDtBQUNBLGNBQWMseUVBQVM7QUFDdkI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBQUs7QUFDTCxZQUFZO0FBQ1osQ0FBQzs7QUFFRCIsInNvdXJjZXMiOlsid2VicGFjazovL3ZpZGVvLXRvLWdpZi1jb252ZXJ0ZXIvPzgzOTMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUGFnZXNBUElSb3V0ZU1vZHVsZSB9IGZyb20gXCJuZXh0L2Rpc3Qvc2VydmVyL2Z1dHVyZS9yb3V0ZS1tb2R1bGVzL3BhZ2VzLWFwaS9tb2R1bGUuY29tcGlsZWRcIjtcbmltcG9ydCB7IFJvdXRlS2luZCB9IGZyb20gXCJuZXh0L2Rpc3Qvc2VydmVyL2Z1dHVyZS9yb3V0ZS1raW5kXCI7XG5pbXBvcnQgeyBob2lzdCB9IGZyb20gXCJuZXh0L2Rpc3QvYnVpbGQvdGVtcGxhdGVzL2hlbHBlcnNcIjtcbi8vIEltcG9ydCB0aGUgdXNlcmxhbmQgY29kZS5cbmltcG9ydCAqIGFzIHVzZXJsYW5kIGZyb20gXCIuL3BhZ2VzXFxcXGFwaVxcXFxjb252ZXJ0LXRvLWdpZi50c1wiO1xuLy8gUmUtZXhwb3J0IHRoZSBoYW5kbGVyIChzaG91bGQgYmUgdGhlIGRlZmF1bHQgZXhwb3J0KS5cbmV4cG9ydCBkZWZhdWx0IGhvaXN0KHVzZXJsYW5kLCBcImRlZmF1bHRcIik7XG4vLyBSZS1leHBvcnQgY29uZmlnLlxuZXhwb3J0IGNvbnN0IGNvbmZpZyA9IGhvaXN0KHVzZXJsYW5kLCBcImNvbmZpZ1wiKTtcbi8vIENyZWF0ZSBhbmQgZXhwb3J0IHRoZSByb3V0ZSBtb2R1bGUgdGhhdCB3aWxsIGJlIGNvbnN1bWVkLlxuZXhwb3J0IGNvbnN0IHJvdXRlTW9kdWxlID0gbmV3IFBhZ2VzQVBJUm91dGVNb2R1bGUoe1xuICAgIGRlZmluaXRpb246IHtcbiAgICAgICAga2luZDogUm91dGVLaW5kLlBBR0VTX0FQSSxcbiAgICAgICAgcGFnZTogXCIvYXBpL2NvbnZlcnQtdG8tZ2lmXCIsXG4gICAgICAgIHBhdGhuYW1lOiBcIi9hcGkvY29udmVydC10by1naWZcIixcbiAgICAgICAgLy8gVGhlIGZvbGxvd2luZyBhcmVuJ3QgdXNlZCBpbiBwcm9kdWN0aW9uLlxuICAgICAgICBidW5kbGVQYXRoOiBcIlwiLFxuICAgICAgICBmaWxlbmFtZTogXCJcIlxuICAgIH0sXG4gICAgdXNlcmxhbmRcbn0pO1xuXG4vLyMgc291cmNlTWFwcGluZ1VSTD1wYWdlcy1hcGkuanMubWFwIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fconvert-to-gif&preferredRegion=&absolutePagePath=.%2Fpages%5Capi%5Cconvert-to-gif.ts&middlewareConfigBase64=e30%3D!\n");
+
+/***/ }),
+
+/***/ "(api)/./pages/api/convert-to-gif.ts":
+/*!*************************************!*\
+  !*** ./pages/api/convert-to-gif.ts ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config),\n/* harmony export */   \"default\": () => (/* binding */ handler)\n/* harmony export */ });\n/* harmony import */ var multer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! multer */ \"multer\");\n/* harmony import */ var multer__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(multer__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */ \"path\");\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _utils_videoToGif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/videoToGif */ \"(api)/./utils/videoToGif.ts\");\n\n\n\n// Configure multer for file upload\nconst upload = multer__WEBPACK_IMPORTED_MODULE_0___default()({\n    storage: multer__WEBPACK_IMPORTED_MODULE_0___default().diskStorage({\n        destination: \"./uploads\",\n        filename: (req, file, cb)=>{\n            cb(null, `${Date.now()}${path__WEBPACK_IMPORTED_MODULE_1___default().extname(file.originalname)}`);\n        }\n    })\n});\n// Disable body parsing, we'll handle it with multer\nconst config = {\n    api: {\n        bodyParser: false\n    }\n};\nasync function handler(req, res) {\n    if (req.method === \"POST\") {\n        try {\n            // Handle the file upload via multer\n            upload.single(\"video\")(req, res, async (err)=>{\n                if (err) {\n                    return res.status(500).json({\n                        error: \"File upload failed\"\n                    });\n                }\n                const file = req.file;\n                if (!file) {\n                    return res.status(400).json({\n                        error: \"No file uploaded\"\n                    });\n                }\n                const inputPath = file.path;\n                const outputPath = path__WEBPACK_IMPORTED_MODULE_1___default().join(\"./public/gifs\", `${Date.now()}.gif`);\n                await (0,_utils_videoToGif__WEBPACK_IMPORTED_MODULE_2__.convertVideoToGif)(inputPath, outputPath);\n                const gifUrl = `/gifs/${path__WEBPACK_IMPORTED_MODULE_1___default().basename(outputPath)}`;\n                res.status(200).json({\n                    gifUrl\n                });\n            });\n        } catch (error) {\n            console.error(\"Error in GIF conversion:\", error);\n            res.status(500).json({\n                error: \"Failed to convert video to GIF\"\n            });\n        }\n    } else {\n        res.setHeader(\"Allow\", [\n            \"POST\"\n        ]);\n        res.status(405).end(`Method ${req.method} Not Allowed`);\n    }\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvY29udmVydC10by1naWYudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUM0QjtBQUNKO0FBQ21DO0FBRzNELG1DQUFtQztBQUNuQyxNQUFNRyxTQUFTSCw2Q0FBTUEsQ0FBQztJQUNwQkksU0FBU0oseURBQWtCLENBQUM7UUFDMUJNLGFBQWE7UUFDYkMsVUFBVSxDQUFDQyxLQUFLQyxNQUFNQztZQUNwQkEsR0FBRyxNQUFNLENBQUMsRUFBRUMsS0FBS0MsR0FBRyxHQUFHLEVBQUVYLG1EQUFZLENBQUNRLEtBQUtLLFlBQVksRUFBRSxDQUFDO1FBQzVEO0lBQ0Y7QUFDRjtBQUVBLG9EQUFvRDtBQUM3QyxNQUFNQyxTQUFTO0lBQ3BCQyxLQUFLO1FBQ0hDLFlBQVk7SUFDZDtBQUNGLEVBQUU7QUFFYSxlQUFlQyxRQUFRVixHQUFtQixFQUFFVyxHQUFvQjtJQUM3RSxJQUFJWCxJQUFJWSxNQUFNLEtBQUssUUFBUTtRQUN6QixJQUFJO1lBQ0Ysb0NBQW9DO1lBQ3BDakIsT0FBT2tCLE1BQU0sQ0FBQyxTQUFTYixLQUFZVyxLQUFZLE9BQU9HO2dCQUNwRCxJQUFJQSxLQUFLO29CQUNQLE9BQU9ILElBQUlJLE1BQU0sQ0FBQyxLQUFLQyxJQUFJLENBQUM7d0JBQUVDLE9BQU87b0JBQXFCO2dCQUM1RDtnQkFFQSxNQUFNaEIsT0FBTyxJQUFhQSxJQUFJO2dCQUM5QixJQUFJLENBQUNBLE1BQU07b0JBQ1QsT0FBT1UsSUFBSUksTUFBTSxDQUFDLEtBQUtDLElBQUksQ0FBQzt3QkFBRUMsT0FBTztvQkFBbUI7Z0JBQzFEO2dCQUVBLE1BQU1DLFlBQVlqQixLQUFLUixJQUFJO2dCQUMzQixNQUFNMEIsYUFBYTFCLGdEQUFTLENBQUMsaUJBQWlCLENBQUMsRUFBRVUsS0FBS0MsR0FBRyxHQUFHLElBQUksQ0FBQztnQkFFakUsTUFBTVYsb0VBQWlCQSxDQUFDd0IsV0FBV0M7Z0JBRW5DLE1BQU1FLFNBQVMsQ0FBQyxNQUFNLEVBQUU1QixvREFBYSxDQUFDMEIsWUFBWSxDQUFDO2dCQUVuRFIsSUFBSUksTUFBTSxDQUFDLEtBQUtDLElBQUksQ0FBQztvQkFBRUs7Z0JBQU87WUFDaEM7UUFDRixFQUFFLE9BQU9KLE9BQU87WUFDZE0sUUFBUU4sS0FBSyxDQUFDLDRCQUE0QkE7WUFDMUNOLElBQUlJLE1BQU0sQ0FBQyxLQUFLQyxJQUFJLENBQUM7Z0JBQUVDLE9BQU87WUFBaUM7UUFDakU7SUFDRixPQUFPO1FBQ0xOLElBQUlhLFNBQVMsQ0FBQyxTQUFTO1lBQUM7U0FBTztRQUMvQmIsSUFBSUksTUFBTSxDQUFDLEtBQUtVLEdBQUcsQ0FBQyxDQUFDLE9BQU8sRUFBRXpCLElBQUlZLE1BQU0sQ0FBQyxZQUFZLENBQUM7SUFDeEQ7QUFDRiIsInNvdXJjZXMiOlsid2VicGFjazovL3ZpZGVvLXRvLWdpZi1jb252ZXJ0ZXIvLi9wYWdlcy9hcGkvY29udmVydC10by1naWYudHM/NDljNCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOZXh0QXBpUmVxdWVzdCwgTmV4dEFwaVJlc3BvbnNlIH0gZnJvbSAnbmV4dCc7XHJcbmltcG9ydCBtdWx0ZXIgZnJvbSAnbXVsdGVyJztcclxuaW1wb3J0IHBhdGggZnJvbSAncGF0aCc7XHJcbmltcG9ydCB7IGNvbnZlcnRWaWRlb1RvR2lmIH0gZnJvbSAnLi4vLi4vdXRpbHMvdmlkZW9Ub0dpZic7XHJcbmltcG9ydCBmcyBmcm9tICdmcy1leHRyYSc7XHJcblxyXG4vLyBDb25maWd1cmUgbXVsdGVyIGZvciBmaWxlIHVwbG9hZFxyXG5jb25zdCB1cGxvYWQgPSBtdWx0ZXIoe1xyXG4gIHN0b3JhZ2U6IG11bHRlci5kaXNrU3RvcmFnZSh7XHJcbiAgICBkZXN0aW5hdGlvbjogJy4vdXBsb2FkcycsXHJcbiAgICBmaWxlbmFtZTogKHJlcSwgZmlsZSwgY2IpID0+IHtcclxuICAgICAgY2IobnVsbCwgYCR7RGF0ZS5ub3coKX0ke3BhdGguZXh0bmFtZShmaWxlLm9yaWdpbmFsbmFtZSl9YCk7XHJcbiAgICB9LFxyXG4gIH0pLFxyXG59KTtcclxuXHJcbi8vIERpc2FibGUgYm9keSBwYXJzaW5nLCB3ZSdsbCBoYW5kbGUgaXQgd2l0aCBtdWx0ZXJcclxuZXhwb3J0IGNvbnN0IGNvbmZpZyA9IHtcclxuICBhcGk6IHtcclxuICAgIGJvZHlQYXJzZXI6IGZhbHNlLFxyXG4gIH0sXHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBoYW5kbGVyKHJlcTogTmV4dEFwaVJlcXVlc3QsIHJlczogTmV4dEFwaVJlc3BvbnNlKSB7XHJcbiAgaWYgKHJlcS5tZXRob2QgPT09ICdQT1NUJykge1xyXG4gICAgdHJ5IHtcclxuICAgICAgLy8gSGFuZGxlIHRoZSBmaWxlIHVwbG9hZCB2aWEgbXVsdGVyXHJcbiAgICAgIHVwbG9hZC5zaW5nbGUoJ3ZpZGVvJykocmVxIGFzIGFueSwgcmVzIGFzIGFueSwgYXN5bmMgKGVycikgPT4ge1xyXG4gICAgICAgIGlmIChlcnIpIHtcclxuICAgICAgICAgIHJldHVybiByZXMuc3RhdHVzKDUwMCkuanNvbih7IGVycm9yOiAnRmlsZSB1cGxvYWQgZmFpbGVkJyB9KTtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIGNvbnN0IGZpbGUgPSAocmVxIGFzIGFueSkuZmlsZTtcclxuICAgICAgICBpZiAoIWZpbGUpIHtcclxuICAgICAgICAgIHJldHVybiByZXMuc3RhdHVzKDQwMCkuanNvbih7IGVycm9yOiAnTm8gZmlsZSB1cGxvYWRlZCcgfSk7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBjb25zdCBpbnB1dFBhdGggPSBmaWxlLnBhdGg7XHJcbiAgICAgICAgY29uc3Qgb3V0cHV0UGF0aCA9IHBhdGguam9pbignLi9wdWJsaWMvZ2lmcycsIGAke0RhdGUubm93KCl9LmdpZmApO1xyXG5cclxuICAgICAgICBhd2FpdCBjb252ZXJ0VmlkZW9Ub0dpZihpbnB1dFBhdGgsIG91dHB1dFBhdGgpO1xyXG5cclxuICAgICAgICBjb25zdCBnaWZVcmwgPSBgL2dpZnMvJHtwYXRoLmJhc2VuYW1lKG91dHB1dFBhdGgpfWA7XHJcblxyXG4gICAgICAgIHJlcy5zdGF0dXMoMjAwKS5qc29uKHsgZ2lmVXJsIH0pO1xyXG4gICAgICB9KTtcclxuICAgIH0gY2F0Y2ggKGVycm9yKSB7XHJcbiAgICAgIGNvbnNvbGUuZXJyb3IoJ0Vycm9yIGluIEdJRiBjb252ZXJzaW9uOicsIGVycm9yKTtcclxuICAgICAgcmVzLnN0YXR1cyg1MDApLmpzb24oeyBlcnJvcjogJ0ZhaWxlZCB0byBjb252ZXJ0IHZpZGVvIHRvIEdJRicgfSk7XHJcbiAgICB9XHJcbiAgfSBlbHNlIHtcclxuICAgIHJlcy5zZXRIZWFkZXIoJ0FsbG93JywgWydQT1NUJ10pO1xyXG4gICAgcmVzLnN0YXR1cyg0MDUpLmVuZChgTWV0aG9kICR7cmVxLm1ldGhvZH0gTm90IEFsbG93ZWRgKTtcclxuICB9XHJcbn1cclxuIl0sIm5hbWVzIjpbIm11bHRlciIsInBhdGgiLCJjb252ZXJ0VmlkZW9Ub0dpZiIsInVwbG9hZCIsInN0b3JhZ2UiLCJkaXNrU3RvcmFnZSIsImRlc3RpbmF0aW9uIiwiZmlsZW5hbWUiLCJyZXEiLCJmaWxlIiwiY2IiLCJEYXRlIiwibm93IiwiZXh0bmFtZSIsIm9yaWdpbmFsbmFtZSIsImNvbmZpZyIsImFwaSIsImJvZHlQYXJzZXIiLCJoYW5kbGVyIiwicmVzIiwibWV0aG9kIiwic2luZ2xlIiwiZXJyIiwic3RhdHVzIiwianNvbiIsImVycm9yIiwiaW5wdXRQYXRoIiwib3V0cHV0UGF0aCIsImpvaW4iLCJnaWZVcmwiLCJiYXNlbmFtZSIsImNvbnNvbGUiLCJzZXRIZWFkZXIiLCJlbmQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(api)/./pages/api/convert-to-gif.ts\n");
+
+/***/ }),
+
+/***/ "(api)/./utils/videoToGif.ts":
+/*!*****************************!*\
+  !*** ./utils/videoToGif.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   convertVideoToGif: () => (/* binding */ convertVideoToGif)\n/* harmony export */ });\n/* harmony import */ var fluent_ffmpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fluent-ffmpeg */ \"fluent-ffmpeg\");\n/* harmony import */ var fluent_ffmpeg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fluent_ffmpeg__WEBPACK_IMPORTED_MODULE_0__);\n\nconst convertVideoToGif = (inputPath, outputPath)=>{\n    return new Promise((resolve, reject)=>{\n        fluent_ffmpeg__WEBPACK_IMPORTED_MODULE_0___default()(inputPath).outputOptions([\n            \"-vf\",\n            \"fps=10,scale=320:-1:flags=lanczos\",\n            \"-pix_fmt\",\n            \"rgb24\",\n            \"-loop\",\n            \"0\"\n        ]).save(outputPath).on(\"end\", ()=>resolve()).on(\"error\", (err)=>reject(err));\n    });\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi91dGlscy92aWRlb1RvR2lmLnRzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUFtQztBQUU1QixNQUFNQyxvQkFBb0IsQ0FBQ0MsV0FBbUJDO0lBQ25ELE9BQU8sSUFBSUMsUUFBUSxDQUFDQyxTQUFTQztRQUMzQk4sb0RBQU1BLENBQUNFLFdBQ0pLLGFBQWEsQ0FBQztZQUNiO1lBQU87WUFDUDtZQUFZO1lBQ1o7WUFBUztTQUNWLEVBQ0FDLElBQUksQ0FBQ0wsWUFDTE0sRUFBRSxDQUFDLE9BQU8sSUFBTUosV0FDaEJJLEVBQUUsQ0FBQyxTQUFTLENBQUNDLE1BQWVKLE9BQU9JO0lBQ3hDO0FBQ0YsRUFBRSIsInNvdXJjZXMiOlsid2VicGFjazovL3ZpZGVvLXRvLWdpZi1jb252ZXJ0ZXIvLi91dGlscy92aWRlb1RvR2lmLnRzP2Q5NjQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGZmbXBlZyBmcm9tICdmbHVlbnQtZmZtcGVnJztcclxuXHJcbmV4cG9ydCBjb25zdCBjb252ZXJ0VmlkZW9Ub0dpZiA9IChpbnB1dFBhdGg6IHN0cmluZywgb3V0cHV0UGF0aDogc3RyaW5nKTogUHJvbWlzZTx2b2lkPiA9PiB7XHJcbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcclxuICAgIGZmbXBlZyhpbnB1dFBhdGgpXHJcbiAgICAgIC5vdXRwdXRPcHRpb25zKFtcclxuICAgICAgICAnLXZmJywgJ2Zwcz0xMCxzY2FsZT0zMjA6LTE6ZmxhZ3M9bGFuY3pvcycsXHJcbiAgICAgICAgJy1waXhfZm10JywgJ3JnYjI0JyxcclxuICAgICAgICAnLWxvb3AnLCAnMCdcclxuICAgICAgXSlcclxuICAgICAgLnNhdmUob3V0cHV0UGF0aClcclxuICAgICAgLm9uKCdlbmQnLCAoKSA9PiByZXNvbHZlKCkpXHJcbiAgICAgIC5vbignZXJyb3InLCAoZXJyOiBFcnJvcikgPT4gcmVqZWN0KGVycikpO1xyXG4gIH0pO1xyXG59O1xyXG4iXSwibmFtZXMiOlsiZmZtcGVnIiwiY29udmVydFZpZGVvVG9HaWYiLCJpbnB1dFBhdGgiLCJvdXRwdXRQYXRoIiwiUHJvbWlzZSIsInJlc29sdmUiLCJyZWplY3QiLCJvdXRwdXRPcHRpb25zIiwic2F2ZSIsIm9uIiwiZXJyIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./utils/videoToGif.ts\n");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-api-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next"], () => (__webpack_exec__("(api)/./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES_API&page=%2Fapi%2Fconvert-to-gif&preferredRegion=&absolutePagePath=.%2Fpages%5Capi%5Cconvert-to-gif.ts&middlewareConfigBase64=e30%3D!")));
+module.exports = __webpack_exports__;
+
+})();
